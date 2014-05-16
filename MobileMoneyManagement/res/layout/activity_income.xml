@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     android:layout_width="fill_parent" -->
+<!--     android:layout_height="fill_parent" > -->
+
+<!--     <TextView -->
+<!--         android:id="@+id/textView1" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:text="income Tab" -->
+<!--         android:textSize="35sp" -->
+<!--         android:textColor="#000" /> -->
+<!--     <Button -->
+<!--         android:id="@+id/button_income" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_below="@+id/textView1" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:text="Open Child" /> -->
+
+<!-- </RelativeLayout> -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <TextView 
+        android:id="@+id/titleincome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#555D63"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/income"/>
+    
+    <ImageButton
+        android:id="@+id/imageadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/add" />
+   
+	<com.example.mobilemoneymanagement.SegmentedRadioGroup
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dip"
+		android:gravity="center"
+		android:layout_below="@+id/titleincome"
+		android:orientation="horizontal"
+		android:id="@+id/segment_text"
+		android:checkedButton="@+id/button_one">
+		<RadioButton android:id="@id/button_one"
+		    android:layout_width="90dp"
+		    android:layout_height="wrap_content"
+			android:minWidth="30dip"
+			android:minHeight="33dip"
+			android:text="Today"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:button="@null"
+			android:gravity="center"
+			android:textColor="@color/radio_colors" />
+		<RadioButton android:id="@+id/button_two"
+		    android:layout_width="90dp"
+		    android:layout_height="wrap_content"
+			android:minWidth="30dip"
+			android:minHeight="33dip"
+			android:text="This week"
+			android:button="@null"
+			android:gravity="center"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="@color/radio_colors" />
+		<RadioButton android:id="@+id/button_three"
+		    android:layout_width="90dp"
+		    android:layout_height="wrap_content"
+			android:minWidth="30dip"
+			android:minHeight="33dip"
+			android:text="This month"
+			android:button="@null"
+			android:gravity="center"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="@color/radio_colors" />
+	</com.example.mobilemoneymanagement.SegmentedRadioGroup>
+	<ListView
+	    android:layout_below="@+id/segment_text"
+	 	android:id="@+id/listViewIncome" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+	
+</RelativeLayout>

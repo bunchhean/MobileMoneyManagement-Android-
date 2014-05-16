@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobilemoneymanagement"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.mobilemoneymanagement.LoginActivity"
+            android:label="@string/app_name" >
+
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mobilemoneymanagement.HomeActivity"
+            android:label="@string/title_activity_home" >
+<!--             <intent-filter> -->
+<!--                 <action android:name="android.intent.action.MAIN" /> -->
+
+<!--                 <category android:name="android.intent.category.LAUNCHER" /> -->
+<!--             </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.example.mobilemoneymanagement.MenuTabActivity"
+            android:label="@string/title_activity_menu_tab" >
+        </activity>
+        <activity
+            android:name="com.example.mobilemoneymanagement.ExpenseActivity"
+            android:label="@string/title_activity_expense" >
+        </activity>
+        <activity
+            android:name="com.example.mobilemoneymanagement.IncomeActivity"
+            android:label="@string/title_activity_income" >
+        </activity>
+        <activity
+            android:name="com.example.mobilemoneymanagement.MoreActivity"
+            android:label="@string/title_activity_more" >
+        </activity>
+        <activity
+            android:name="com.example.mobilemoneymanagement.MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name="com.example.mobilemoneymanagement.SegmentedRadioActivity"
+            android:label="@string/title_activity_segmented_radio" >
+        </activity>
+        <activity
+            android:name="com.example.mobilemoneymanagement.IncomeAddNewActivity"
+            android:label="@string/title_activity_income_add_new" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.example.mobilemoneymanagement.ExpenseAddNewActivity"
+            android:label="@string/title_activity_expense_add_new" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name="com.example.mobilemoneymanagement.RegisterActivity" >
+        </activity>
+        <activity
+            android:name="com.example.mobilemoneymanagement.IncomeModifierActivity"
+            android:label="@string/title_activity_income_modifier" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.example.mobilemoneymanagement.ExpenseModifierActivity"
+            android:label="@string/title_activity_expense_modifier" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.example.mobilemoneymanagement.TabHostActivity"
+            android:label="@string/title_activity_tab_host" >
+<!--              <intent-filter> -->
+<!--                 <action android:name="android.intent.action.MAIN" /> -->
+
+<!--                 <category android:name="android.intent.category.LAUNCHER" /> -->
+<!--             </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.example.mobilemoneymanagement.ChildActivity"
+            android:label="@string/title_activity_child" >
+        </activity>
+          <activity android:name="com.example.mobilemoneymanagement.ExpenseGroupActivity" />
+          <activity android:name="com.example.mobilemoneymanagement.IncomeGroupActivity" />
+          <activity android:name="com.example.mobilemoneymanagement.HomeGroupActivity" />
+          <activity android:name="com.example.mobilemoneymanagement.MoreGroupActivity" />
+
+        
+    </application>
+
+</manifest>

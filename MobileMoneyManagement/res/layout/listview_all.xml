@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <TextView
+         android:id="@+id/txtincome"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/txtdismonth"
+         android:layout_marginLeft="38dp"
+         android:layout_marginTop="10dp"
+         android:text="@string/income"
+         android:textColor="#000000"
+         android:textSize="16sp"
+         android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/incomeamount"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/txtincome"
+         android:layout_below="@+id/txtincome"
+         android:layout_marginTop="15dp"
+         android:text="@string/incomeamount" />
+
+     <TextView
+         android:id="@+id/expenseamount"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/incomeamount"
+         android:layout_alignBottom="@+id/incomeamount"
+         android:layout_alignLeft="@+id/txtexpense"
+         android:text="@string/expenseamount" />
+
+     <TextView
+         android:id="@+id/txtexpense"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/incomeamount"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="33dp"
+         android:text="@string/expense"
+         android:textColor="#000000"
+         android:textSize="16sp"
+         android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/txtdismonth"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="20dp"
+         android:text="@string/month"
+         android:textSize="16sp"
+         android:textStyle="bold" />
+    
+</RelativeLayout>

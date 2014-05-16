@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IncomeAddNewActivity" >
+
+    <TextView
+        android:id="@+id/txtnewexpense"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#555D63"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/addnewexpense"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtexpamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtnewexpense"
+        android:layout_marginLeft="16dp"
+        android:textSize="14sp"
+        android:layout_marginTop="34dp"
+        android:text="@string/expamount" />
+
+    <TextView
+        android:id="@+id/txtexpnote"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtexpamount"
+        android:layout_below="@+id/txtexpamount"
+        android:layout_marginTop="29dp"
+        android:text="@string/expnote" />
+
+    <EditText
+        android:id="@+id/editexpnote"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtexpnote"
+        android:layout_alignLeft="@+id/editexpamount"
+        android:inputType="text"
+        android:layout_marginRight="10sp"
+        android:ems="10" />
+
+    <EditText
+        android:layout_marginRight="10sp"
+        android:id="@+id/editexpamount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtexpnote"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/txtexpamount"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+		
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtexpcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtexpnote"
+        android:layout_below="@+id/txtexpnote"
+        android:layout_marginTop="30dp"
+        android:text="@string/expcategory" />
+    <LinearLayout
+    android:id="@+id/layout_spinner"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="70sp"
+    android:layout_marginTop="10dp"
+    android:layout_alignLeft="@+id/txtexpcategory"
+    android:layout_below="@+id/editexpnote"
+    android:layout_marginRight="10sp"
+    android:orientation="vertical" >
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/select" />
+    <Button
+     android:id="@+id/btnexpense"
+     android:layout_width="100dp"
+     android:layout_marginTop="10dp"
+     android:layout_height="wrap_content"
+     android:text="@string/button_label" />
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegisterActivity" >
+    
+     <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username" />
+
+      <EditText
+          android:id="@+id/txtPassword"
+          android:inputType="textPassword"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/txtUsername"
+          android:layout_below="@+id/txtUsername"
+          android:layout_marginTop="14dp"
+          android:ems="10"
+          android:hint="@string/password" />
+      
+       <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPassword"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email" />
+       
+        <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:inputType="phone"
+        android:hint="@string/phone" />
+
+      <TextView
+          android:id="@+id/tvPrivacy"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:text="@string/privacy_text" />
+
+      <Button
+          android:id="@+id/btnRegister"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/txtPhone"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="14dp"
+          android:onClick="onClickRegister" 
+          android:text="@string/register" />
+</RelativeLayout>
